@@ -6,8 +6,9 @@
 @import 'compass/reset';
 $alegreya: 'Alegreya', serif;
 $gentium: 'Gentium Basic', serif;
+$nobile: 'Nobile', sans-serif;
 html {
- font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 .navbar-default {
@@ -18,36 +19,45 @@ html {
 	        box-shadow: none;
 }
 .site-title {
+	font: bold 6.0rem $alegreya;
+
 	display: block;
 	float: none;
 
+	height: inherit;
 	margin: 0 auto;
-	height: -1px !important;
-	text-align: center;
-	font: bold 6.0rem $alegreya;
 	margin-top: 70px;
+
+	text-align: center;
 }
 .site-title a {
 	color: black;
 }
 .site-title a:active,
 .site-title a:hover {
-	color: black;
 	text-decoration: none;
+
+	color: black;
 }
 
 .subheader {
-	text-align: center;
 	font: 1.4rem $gentium;
+	padding-bottom: 75px;
+
+	text-align: center;
 }
 .navbar-center {
 	display: inline-block;
-	text-align: center;
-}
-.collapse {
-	text-align: center;
-}
 
+	text-align: center;
+}
+.navbar-collapse {
+	text-align: center;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #c30;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -56,11 +66,11 @@ html {
 .navbar-nav {
 	li {
 		text-align: center;
-
 	}
 	li a {
-		font: 1.6rem $gentium;
+		font: bold 1.6rem $gentium;
 
+		text-transform: uppercase;
 	}
 }
 .img-center {
@@ -69,9 +79,100 @@ html {
 
 	margin-right: auto;
 	margin-left: auto;
+
 }
-@media (min-width: 768px){
-.navbar-nav {
-	  float: none !important;
-    margin: 0;
-}}
+//sekcja intro
+.intro {
+	padding-top: 75px;
+	h2 {
+		font: 4.8rem $gentium;
+
+		padding-top: 55px;
+
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.slogan {
+		font: 2.4rem $gentium;
+
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		text-align: center;
+
+		border-top: 1px solid #cccccc;
+		border-bottom: 1px solid #cccccc;
+		margin-top: 60px;
+	}
+
+}
+//blogpost
+.blog-post {
+	padding-top: 90px;
+	text-align: center;
+	padding-bottom: 70px;
+	h2 {
+		font: 3.0rem $gentium;
+		text-align: center;
+	}
+	.glyphicon-book {
+			font-size: 4.0rem;
+			padding-bottom: 35px;
+	}
+	.post-lead {
+		font-family: $nobile, Helvetica,Arial,sans-serif;
+		font-size: 1.6rem;
+		margin-top: 60px;
+	}
+	.continue {
+		@extend .post-lead;
+			margin-top: 36px;
+			border-bottom: 1px dotted grey;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 145px;
+			padding-bottom: 10px;
+	}
+	footer {
+		padding-top: 35px;
+	}
+}
+
+footer {
+	padding-bottom: 45px;
+	p {
+		font: 1.4rem $gentium;
+
+		text-align: center;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: none !important;
+
+		margin: 0;
+	}
+}
+@media (max-width: 770px){
+	.navbar-default .col-md-12 {
+		text-align: center;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.site-title {
+		margin-top: -35px;
+		display: inline-block;
+	}
+	.subheader {
+		padding-bottom: 0;
+		display: block;
+	}
+	.navbar-header button {
+		margin-bottom: 0;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: transparent;
+	}
+	
+}
