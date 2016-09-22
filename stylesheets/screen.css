@@ -188,26 +188,26 @@ html {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .blog-post h3 {
   font: 2rem "Nobile", sans-serif;
   margin-top: 10px;
   color: lightgrey;
 }
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .blog-post .glyphicon,
 .blog-post .icon {
   font-size: 4.0rem;
   padding-bottom: 35px;
 }
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .blog-post .post-lead, .blog-post .continue {
   font-family: "Nobile", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   margin-top: 60px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .blog-post .continue {
   display: block;
   width: 145px;
@@ -217,118 +217,133 @@ html {
   padding-bottom: 10px;
   border-bottom: 1px dotted grey;
 }
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .blog-post footer {
   padding-top: 35px;
+  font: 1.4rem "Nobile", sans-serif;
+  color: lightgrey;
+  margin-bottom: 40px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
+.blog-post footer b {
+  font-weight: bold;
+  color: black;
+}
+/* line 167, ../sass/screen.scss */
 .blog-post .post-icon {
   width: auto;
   min-width: 200px;
   height: 300px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 60px;
   background-image: url("../img/bg.jpg");
   background-size: cover;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .change-post {
   font: 1.5rem "Nobile", sans-serif;
   padding-top: 80px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .change-post a {
   display: inline-block;
   color: black;
 }
-/* line 178, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .change-post a:active,
 .change-post a:hover {
   text-decoration: none;
 }
-/* line 182, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .change-post a:first-child {
   float: left;
 }
-/* line 185, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .change-post a:nth-child(2) {
   float: right;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 footer.site-footer {
   padding-top: 100px;
   padding-bottom: 45px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 footer.site-footer p {
   font: 1.8rem "Gentium Basic", serif;
   text-align: center;
 }
-/* line 197, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 footer.site-footer .spacer {
   padding-bottom: 30px;
   border-top: 1px solid grey;
 }
-/* line 202, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 footer.site-footer .icons {
   text-align: center;
   padding-bottom: 40px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 footer.site-footer .icons > span {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 2.0rem;
   display: inline-block;
 }
+/* line 222, ../sass/screen.scss */
+footer.site-footer .fa:hover {
+  color: cornflowerblue;
+}
 
 @media (min-width: 768px) {
-  /* line 214, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   .navbar-nav {
-    float: none !important;
+    float: none;
     margin: 0;
   }
 }
 @media (max-width: 770px) {
-  /* line 221, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .navbar-default .col-md-12 {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
   }
 
-  /* line 227, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .site-title {
     display: inline-block;
     margin-top: -47px;
   }
 
-  /* line 232, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   .subheader {
     display: block;
     padding-bottom: 0;
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   .navbar-header button {
     margin-top: 20px;
     margin-bottom: 0;
   }
 
-  /* line 241, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: transparent;
   }
 }
 @media (max-width: 1100px) {
-  /* line 247, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   footer .row .spacer {
     border-top: none;
+    display: none;
   }
 
-  /* line 250, ../sass/screen.scss */
+  /* line 265, ../sass/screen.scss */
   footer {
     padding-top: 50px;
   }

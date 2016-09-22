@@ -118,6 +118,7 @@ html {
 
 		text-align: center;
 		text-transform: uppercase;
+
 	}
 	h3 {
 		font: 2.0rem $nobile;
@@ -125,6 +126,7 @@ html {
 		margin-top: 10px;
 
 		color: lightgrey;
+
 	}
 	.glyphicon,
 	.icon {
@@ -154,6 +156,13 @@ html {
 	}
 	footer {
 		padding-top: 35px;
+		font: 1.4rem $nobile;
+		color: lightgrey;
+		margin-bottom: 40px;
+		b {
+			font-weight: bold;
+			color: black;
+		}
 	}
 	.post-icon {
 		width: auto;
@@ -161,7 +170,7 @@ html {
 		height: 300px;
 		margin-right: auto;
 		margin-left: auto;
-
+		margin-top: 60px;
 		background-image: url('../img/bg.jpg');
 		background-size: cover;
 	}
@@ -204,15 +213,20 @@ footer.site-footer {
 		padding-bottom: 40px;
 	}
 	.icons > span {
-		margin-left: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 		font-size: 2.0rem;
 		display: inline-block;
+	}
+
+	.fa:hover {
+		color: cornflowerblue;
 	}
 }
 
 @media (min-width: 768px) {
 	.navbar-nav {
-		float: none !important;
+		float: none;
 
 		margin: 0;
 	}
@@ -246,6 +260,7 @@ footer.site-footer {
 @media (max-width: 1100px) {
 	footer .row .spacer {
 		border-top: none;
+		display: none;
 	}
 	footer {
 		padding-top: 50px;
