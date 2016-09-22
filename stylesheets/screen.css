@@ -180,24 +180,33 @@ html {
   padding-top: 90px;
   text-align: center;
   padding-bottom: 70px;
+  border-bottom: 1px solid lightgrey;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .blog-post h2 {
   font: 3rem "Gentium Basic", serif;
   text-align: center;
+  text-transform: uppercase;
 }
-/* line 118, ../sass/screen.scss */
-.blog-post .glyphicon-book {
+/* line 120, ../sass/screen.scss */
+.blog-post h3 {
+  font: 2rem "Nobile", sans-serif;
+  color: lightgrey;
+  margin-top: 10px;
+}
+/* line 126, ../sass/screen.scss */
+.blog-post .glyphicon {
   font-size: 4.0rem;
   padding-bottom: 35px;
 }
-/* line 122, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .blog-post .post-lead, .blog-post .continue {
   font-family: "Nobile", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   margin-top: 60px;
+  line-height: 1.6;
 }
-/* line 127, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .blog-post .continue {
   margin-top: 36px;
   border-bottom: 1px dotted grey;
@@ -207,54 +216,65 @@ html {
   width: 145px;
   padding-bottom: 10px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .blog-post footer {
   padding-top: 35px;
 }
+/* line 149, ../sass/screen.scss */
+.blog-post .post-icon {
+  width: auto;
+  height: 300px;
+  min-width: 200px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/* line 142, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 footer {
   padding-bottom: 45px;
+  padding-top: 100px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 footer p {
   font: 1.4rem "Gentium Basic", serif;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 151, ../sass/screen.scss */
+  /* line 170, ../sass/screen.scss */
   .navbar-nav {
     float: none !important;
     margin: 0;
   }
 }
 @media (max-width: 770px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 177, ../sass/screen.scss */
   .navbar-default .col-md-12 {
     text-align: center;
     margin-top: 0;
     padding-top: 0;
   }
 
-  /* line 163, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   .site-title {
     margin-top: -35px;
     display: inline-block;
   }
 
-  /* line 167, ../sass/screen.scss */
+  /* line 186, ../sass/screen.scss */
   .subheader {
     padding-bottom: 0;
     display: block;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   .navbar-header button {
     margin-bottom: 0;
   }
 
-  /* line 174, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
   }
