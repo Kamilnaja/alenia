@@ -42,6 +42,7 @@ html {
 
 .subheader {
 	font: 1.4rem $gentium;
+
 	padding-bottom: 75px;
 
 	text-align: center;
@@ -79,7 +80,6 @@ html {
 
 	margin-right: auto;
 	margin-left: auto;
-
 }
 //sekcja intro
 .intro {
@@ -95,77 +95,112 @@ html {
 	.slogan {
 		font: 2.4rem $gentium;
 
+		margin-top: 60px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 
 		text-align: center;
 
-		border-top: 1px solid #cccccc;
-		border-bottom: 1px solid #cccccc;
-		margin-top: 60px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
 	}
-
 }
 //blogpost
 .blog-post {
 	padding-top: 90px;
-	text-align: center;
 	padding-bottom: 70px;
+
+	text-align: center;
+
 	border-bottom: 1px solid lightgrey;
 	h2 {
 		font: 3.0rem $gentium;
+
 		text-align: center;
 		text-transform: uppercase;
 	}
 	h3 {
 		font: 2.0rem $nobile;
 
-		color: lightgrey;
 		margin-top: 10px;
+
+		color: lightgrey;
 	}
-	.glyphicon {
-			font-size: 4.0rem;
-			padding-bottom: 35px;
+	.glyphicon,
+	.icon {
+		font-size: 4.0rem;
+
+		padding-bottom: 35px;
 	}
 	.post-lead {
 		font-family: $nobile, Helvetica,Arial,sans-serif;
 		font-size: 1.6rem;
-		margin-top: 60px;
 		line-height: 1.6;
+
+		margin-top: 60px;
 	}
 	.continue {
+		display: block;
+
+		width: 145px;
+		margin-top: 36px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 10px;
+
+		border-bottom: 1px dotted grey;
+
 		@extend .post-lead;
-			margin-top: 36px;
-			border-bottom: 1px dotted grey;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 145px;
-			padding-bottom: 10px;
 	}
 	footer {
 		padding-top: 35px;
 	}
 	.post-icon {
 		width: auto;
-		height: 300px;
 		min-width: 200px;
-		background-image: url("../img/bg.jpg");
-		background-size: cover;
-		margin-left: auto;
+		height: 300px;
 		margin-right: auto;
+		margin-left: auto;
+
+		background-image: url('../img/bg.jpg');
+		background-size: cover;
 	}
 }
+.change-post {
+	font: 1.5rem $nobile;
 
+	padding-top: 80px;
+	a {
+		display: inline-block;
+
+		color: black;
+	}
+	a:active,
+	a:hover {
+		text-decoration: none;
+	}
+	a:first-child {
+		float: left;
+	}
+	a:nth-child(2) {
+		float: right;
+	}
+}
 footer {
-	padding-bottom: 45px;
 	padding-top: 100px;
+	padding-bottom: 45px;
+
 	p {
-		font: 1.4rem $gentium;
+		font: 1.8rem $gentium;
 
 		text-align: center;
 	}
+	.spacer {
+		border-top: 1px solid grey;
+		padding-bottom: 30px;
+	}
 }
+
 @media (min-width: 768px) {
 	.navbar-nav {
 		float: none !important;
@@ -173,26 +208,35 @@ footer {
 		margin: 0;
 	}
 }
-@media (max-width: 770px){
+@media (max-width: 770px) {
 	.navbar-default .col-md-12 {
-		text-align: center;
 		margin-top: 0;
 		padding-top: 0;
+
+		text-align: center;
 	}
 	.site-title {
-		margin-top: -35px;
 		display: inline-block;
+
+		margin-top: -35px;
 	}
 	.subheader {
-		padding-bottom: 0;
 		display: block;
+
+		padding-bottom: 0;
 	}
 	.navbar-header button {
 		margin-bottom: 0;
 	}
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
 		border-color: transparent;
 	}
 
-	
+
+}
+@media (max-width: 1100px){
+	footer .row .spacer {
+		border-top: none;
+	}
 }
