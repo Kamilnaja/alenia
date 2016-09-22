@@ -257,62 +257,79 @@ html {
 }
 
 /* line 189, ../sass/screen.scss */
-footer {
+footer.site-footer {
   padding-top: 100px;
   padding-bottom: 45px;
 }
-/* line 193, ../sass/screen.scss */
-footer p {
+/* line 192, ../sass/screen.scss */
+footer.site-footer p {
   font: 1.8rem "Gentium Basic", serif;
   text-align: center;
 }
-/* line 198, ../sass/screen.scss */
-footer .spacer {
-  border-top: 1px solid grey;
+/* line 197, ../sass/screen.scss */
+footer.site-footer .spacer {
   padding-bottom: 30px;
+  border-top: 1px solid grey;
+}
+/* line 202, ../sass/screen.scss */
+footer.site-footer .icons {
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 206, ../sass/screen.scss */
+footer.site-footer .icons > span {
+  margin-left: 20px;
+  font-size: 2.0rem;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
-  /* line 205, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   .navbar-nav {
     float: none !important;
     margin: 0;
   }
 }
 @media (max-width: 770px) {
-  /* line 212, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .navbar-default .col-md-12 {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
   }
 
-  /* line 218, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .site-title {
     display: inline-block;
-    margin-top: -35px;
+    margin-top: -47px;
   }
 
-  /* line 223, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   .subheader {
     display: block;
     padding-bottom: 0;
   }
 
-  /* line 228, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .navbar-header button {
+    margin-top: 20px;
     margin-bottom: 0;
   }
 
-  /* line 231, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: transparent;
   }
 }
 @media (max-width: 1100px) {
-  /* line 239, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   footer .row .spacer {
     border-top: none;
+  }
+
+  /* line 250, ../sass/screen.scss */
+  footer {
+    padding-top: 50px;
   }
 }

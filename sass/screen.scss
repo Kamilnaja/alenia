@@ -186,18 +186,27 @@ html {
 		float: right;
 	}
 }
-footer {
+footer.site-footer {
 	padding-top: 100px;
 	padding-bottom: 45px;
-
 	p {
 		font: 1.8rem $gentium;
 
 		text-align: center;
 	}
 	.spacer {
-		border-top: 1px solid grey;
 		padding-bottom: 30px;
+
+		border-top: 1px solid grey;
+	}
+	.icons {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+	.icons > span {
+		margin-left: 20px;
+		font-size: 2.0rem;
+		display: inline-block;
 	}
 }
 
@@ -218,7 +227,7 @@ footer {
 	.site-title {
 		display: inline-block;
 
-		margin-top: -35px;
+		margin-top: -47px;
 	}
 	.subheader {
 		display: block;
@@ -226,17 +235,19 @@ footer {
 		padding-bottom: 0;
 	}
 	.navbar-header button {
+		margin-top: 20px;
 		margin-bottom: 0;
 	}
 	.navbar-default .navbar-collapse,
 	.navbar-default .navbar-form {
 		border-color: transparent;
 	}
-
-
 }
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
 	footer .row .spacer {
 		border-top: none;
+	}
+	footer {
+		padding-top: 50px;
 	}
 }
