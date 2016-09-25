@@ -98,54 +98,56 @@ html {
 }
 
 /* line 36, ../sass/screen.scss */
-.site-title a:active,
-.site-title a:hover {
+.col-md-12 h1.site-title a:active,
+.col-md-12 h1.site-title a:hover,
+.col-md-12 h1.site-title a:focus {
   text-decoration: none;
-  color: black;
+  border-bottom: 0 solid transparent;
+  color: darkgrey;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .subheader {
   font: 1.4rem "Gentium Basic", serif;
   padding-bottom: 75px;
   text-align: center;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .navbar-center {
   display: inline-block;
   text-align: center;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .navbar-collapse {
   text-align: center;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
   color: #c30;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .navbar-nav li {
   text-align: center;
 }
-/* line 71, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .navbar-nav li a {
   font: bold 1.6rem "Gentium Basic", serif;
   text-transform: uppercase;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .img-center {
   display: block;
   float: none;
@@ -153,30 +155,30 @@ html {
   margin-left: auto;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .form {
   padding-top: 50px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .form hr {
   margin-bottom: 50px;
 }
-/* line 90, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .form label {
   font: 2rem "Gentium Basic", serif;
   margin-top: 20px;
   margin-bottom: 5px;
 }
-/* line 95, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .form input, .form textarea {
   width: 100%;
 }
-/* line 98, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .form input {
   padding: 10px;
   font: 1.5rem calibri;
 }
-/* line 102, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .form .send-button {
   padding: 8px 20px;
   background-color: #444444;
@@ -186,13 +188,13 @@ html {
   margin-top: 20px;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .intro h2 {
   font: 4.8rem "Gentium Basic", serif;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .intro .big-picture {
   height: 350px;
   width: 100%;
@@ -205,21 +207,21 @@ html {
   margin-bottom: 50px;
   background-position-y: -134px;
 }
-/* line 131, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .intro .img-center {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .intro .contact-info {
   font: 1.5rem "Nobile", sans-serif;
   line-height: 1.6;
 }
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .intro .contact-info b {
   font-weight: bold;
 }
-/* line 142, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .intro .slogan {
   font: 2.4rem "Gentium Basic", serif;
   padding-top: 15px;
@@ -228,44 +230,44 @@ html {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-/* line 153, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .intro .big-header {
   padding-bottom: 50px;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .blog-post {
   padding-top: 90px;
   padding-bottom: 70px;
   text-align: center;
   border-bottom: 1px solid lightgrey;
 }
-/* line 165, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .blog-post h2 {
   font: 3rem "Gentium Basic", serif;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 172, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .blog-post h3 {
   font: 2rem "Nobile", sans-serif;
   margin-top: 10px;
   color: lightgrey;
 }
-/* line 180, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .blog-post .glyphicon,
 .blog-post .icon {
   font-size: 4.0rem;
   padding-bottom: 35px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .blog-post .post-lead, .blog-post .continue {
   font-family: "Nobile", sans-serif, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   margin-top: 60px;
 }
-/* line 193, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .blog-post .continue {
   display: block;
   width: 145px;
@@ -275,19 +277,19 @@ html {
   padding-bottom: 10px;
   border-bottom: 1px dotted grey;
 }
-/* line 206, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .blog-post footer {
   padding-top: 35px;
   font: 1.4rem "Nobile", sans-serif;
   color: lightgrey;
   margin-bottom: 40px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .blog-post footer b {
   font-weight: bold;
   color: black;
 }
-/* line 216, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .blog-post .post-icon {
   width: auto;
   min-width: 200px;
@@ -299,109 +301,109 @@ html {
   background-size: cover;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .change-post {
   font: 1.5rem "Nobile", sans-serif;
   padding-top: 80px;
 }
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .change-post a {
   display: inline-block;
   color: black;
 }
-/* line 236, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .change-post a:active,
 .change-post a:hover {
   text-decoration: none;
 }
-/* line 240, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .change-post a:first-child {
   float: left;
 }
-/* line 243, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .change-post a:nth-child(2) {
   float: right;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 footer.site-footer {
   padding-top: 100px;
   padding-bottom: 45px;
 }
-/* line 250, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 footer.site-footer p {
   font: 1.8rem "Gentium Basic", serif;
   text-align: center;
 }
-/* line 255, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 footer.site-footer .spacer {
   padding-bottom: 30px;
   border-top: 1px solid grey;
 }
-/* line 260, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 footer.site-footer .icons {
   text-align: center;
   padding-bottom: 40px;
 }
-/* line 264, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 footer.site-footer .icons > span {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 2.0rem;
   display: inline-block;
 }
-/* line 271, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 footer.site-footer .fa:hover {
   color: cornflowerblue;
 }
 
 @media (min-width: 768px) {
-  /* line 277, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   .navbar-nav {
     float: none;
     margin: 0;
   }
 }
 @media (max-width: 770px) {
-  /* line 284, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   .navbar-default .col-md-12 {
     margin-top: 0;
     padding-top: 0;
     text-align: center;
   }
 
-  /* line 290, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   .site-title {
     display: inline-block;
     margin-top: -47px;
   }
 
-  /* line 295, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   .subheader {
     display: block;
     padding-bottom: 0;
   }
 
-  /* line 300, ../sass/screen.scss */
+  /* line 303, ../sass/screen.scss */
   .navbar-header button {
     margin-top: 20px;
     margin-bottom: 0;
   }
 
-  /* line 304, ../sass/screen.scss */
+  /* line 307, ../sass/screen.scss */
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: transparent;
   }
 }
 @media (max-width: 1100px) {
-  /* line 310, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   footer .row .spacer {
     border-top: none;
     display: none;
   }
 
-  /* line 314, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   footer {
     padding-top: 50px;
   }
